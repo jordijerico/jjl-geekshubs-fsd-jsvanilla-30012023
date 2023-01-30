@@ -44,20 +44,50 @@ console.log(incrementarUno);
 let drecrecerUno = --numeroUno;
 console.log(drecrecerUno);
 */
+/*
 
-let nota = prompt("Dime una nota", "");
+
+
+// CALCULADOR NOTAS
+let nota = parseInt(prompt("Dime una nota", ""));
 let insuficiente = 4;
 let suficiente = 6;
 let notable = 8;
 let sobresaliente = 10;
 
-if (nota <= insuficiente && nota >= 0) {
-    window.alert("Tu nota es insuficiente");
-} else if (nota <= suficiente && nota > insuficiente) {
-    window.alert("Tu nota es suficiente");
-} else if (nota <= notable && nota > suficiente) {
-    window.alert("Tu nota es notable");
+
+if (nota >= 0 && nota <= 10) {
+    if (nota <= insuficiente && nota >= 0) {
+        window.alert("Tu nota es insuficiente, estudia");
+    } else if (nota <= suficiente && nota > insuficiente) {
+        window.alert("Tu nota es suficiente. No está mal, pero estudia más");
+    } else if (nota <= notable && nota > suficiente) {
+        window.alert("Tu nota es notable");
+    } if (nota <= sobresaliente && nota > notable) {
+        window.alert("Tu nota es sobresaliente");
+    }
+} else {
+    window.alert("Introduce una nota valida crack")
 }
-if (nota <= sobresaliente && nota > notable) {
-    window.alert("Tu nota es sobresaliente");
+*/
+
+
+//CALCULADORA
+let numero1 = parseInt(prompt("Dime un numero", ""));
+let numero2 = parseInt(prompt("Dime otro numero", ""));
+let operacion = prompt("Dime que quieres hacer", "");
+
+if (operacion == "+") {
+    let result = numero1 + numero2;
+    window.alert(result)
+} else if (operacion == "-") {
+    let result = numero1 - numero2;
+    window.alert(result)
+} else if (operacion == "*") {
+    let result = numero1 * numero2;
+    window.alert(result)
+} else if (operacion == "/") {
+    let result = numero1 / numero2;
+    window.alert(result)
+    
 }
