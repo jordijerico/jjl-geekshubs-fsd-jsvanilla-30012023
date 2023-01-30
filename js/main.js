@@ -45,21 +45,19 @@ let drecrecerUno = --numeroUno;
 console.log(drecrecerUno);
 */
 
-let nota = prompt("Dime una nota","");
-let insuficiente = 4
+let nota = prompt("Dime una nota", "");
+let insuficiente = 4;
 let suficiente = 6;
 let notable = 8;
 let sobresaliente = 10;
 
-if (nota <= insuficiente) {
-    console.log("Tu nota es insuficiente");
-    
+if (nota <= insuficiente && nota >= 0) {
+    window.alert("Tu nota es insuficiente");
 } else if (nota <= suficiente && nota > insuficiente) {
-    console.log("Tu nota es suficiente");
+    window.alert("Tu nota es suficiente");
 } else if (nota <= notable && nota > suficiente) {
-        console.log("Tu nota es notable");
-} if (nota <= sobresaliente && nota > notable) {
-    console.log("Tu nota es sobresaliente");
+    window.alert("Tu nota es notable");
 }
-
-
+if (nota <= sobresaliente && nota > notable) {
+    window.alert("Tu nota es sobresaliente");
+}
